@@ -38,19 +38,19 @@ function Video () {
 
   return (
 		<section className='bg-white'>
-			<div className="w-full h-full overflow-hidden flex justify-center items-center">
+			<div className="w-full h-screen overflow-hidden flex justify-center items-center">
 				<video autoPlay muted ref={video} onTimeUpdate={timeupdate} onClick={try_proceed_checkpoint_next}>
 						<source 
 							src="video.mp4" 
 							type="video/mp4" 
-							className="w-full"
+							className="w-full h-full"
 						>
 						</source>
 				</video>				
 			</div>
 			<div className="w-full flex justify-center">
 				<button 
-					className="w-9"
+					className="w-9 skip"
 					onClick={try_proceed_checkpoint_final}
 				>
 					<img src="images/next.png" />

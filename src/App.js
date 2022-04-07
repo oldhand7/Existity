@@ -4,7 +4,7 @@ import Video from "components/video"
 
 function App() {
   return (
-    <div className='container mx-auto'>
+    <div className='w-full relative'>
       <Video />
     </div>
   )
