@@ -11,6 +11,7 @@ import Nav from '@material-tailwind/react/Nav'
 import NavItem from '@material-tailwind/react/NavItem'
 import NavLink from '@material-tailwind/react/NavLink'
 import Icon from '@material-tailwind/react/Icon'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Navigation = () => {
   const [openMenu, setOpenMenu] = useState(false)
@@ -29,14 +30,14 @@ const Navigation = () => {
 
         <NavbarCollapse open={openMenu}>
           <Nav>
-            <NavItem active='light' ripple='light'>
-              Discover
+            <NavItem  ripple='light'>
+             <AnchorLink href='#collection'>Collection</AnchorLink>
             </NavItem>
-            <NavLink href='#navbar' ripple='light'>
-              Profile
-            </NavLink>
+            <NavItem href='#mint' ripple='light'>
+              <AnchorLink href='#mint'>Mint</AnchorLink>
+            </NavItem>
             <NavItem ripple='light'>
-              Settings
+              Connect wallet
             </NavItem>
           </Nav>
         </NavbarCollapse>
