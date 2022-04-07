@@ -2,8 +2,8 @@ const Collection = () => {
   return (
 		<section className='collection relative'>
 			<div className="card-overlay w-full pt-24">
-				<h1 className="text-white t-title">THE COLLECTION && DAO</h1>
-				<div className="px-40 mt-6">
+				<h1 className="text-white t-title md:px-12 sm:pl-4 pr-2 lg:pl-40 lg:pr-16 text-xl md:text-2xl lg:text-3xl">THE COLLECTION && DAO</h1>
+				<div className="mt-6 sm:px-4 md:px-12 lg:px-40 t-content">
 					<p className="text-white t-dao">
 						Existity will launch as a collection of 1501 NFTs on Ethereum. Each NFT represents a
 						special and unique idea. Existity is not just any jpeg NFT project. Every NFT is unique
