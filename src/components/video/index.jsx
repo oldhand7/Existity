@@ -39,13 +39,13 @@ function Video () {
   return (
 		<section className='bg-white relative'>
 			<div className="w-full h-screen flex justify-center items-center">
-				<video autoPlay muted ref={video} onTimeUpdate={timeupdate} onClick={try_proceed_checkpoint_next}>
-						<source 
-							src="video.mp4" 
-							type="video/mp4" 
-							className="w-full h-full"
-						>
-						</source>
+				<video autoPlay muted ref={video} onTimeUpdate={timeupdate} onClick={try_proceed_checkpoint_next} className="h-full">
+					<source 
+						src="video.mp4" 
+						type="video/mp4" 
+						className="w-full h-full"
+					>
+					</source>
 				</video>				
 			</div>
 			<div className="w-full flex justify-center">
